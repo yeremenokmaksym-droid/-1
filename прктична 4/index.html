@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список справ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Мій список справ</h1>
+
+        <form id="taskForm">
+            <input type="text" id="taskInput"
+                   placeholder="Введіть нове завдання"
+                   maxlength="200" required>
+            <button type="submit" id="addButton">Додати</button>
+        </form>
+
+        <p id="loading">Завантаження...</p>
+        <p id="error" role="alert"></p>
+
+        <ul id="taskList"></ul>
+
+        <p id="counter">Усього завдань: 0</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
